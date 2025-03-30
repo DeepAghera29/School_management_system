@@ -18,7 +18,7 @@ router.route('/')
   .get(restrictTo('teacher'), getMySchedule);
 
 router.route('/:id')
-  .patch(restrictTo('teacher'), updateSchedule)
+  .put(restrictTo('teacher'), updateSchedule)
   .delete(restrictTo('teacher'), deleteSchedule);
 
 export default router;

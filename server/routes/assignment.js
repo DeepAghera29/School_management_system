@@ -23,7 +23,7 @@ router.get('/my-assignments', restrictTo('teacher'), getMyAssignments);
 
 router.route('/:id')
   .get(getAssignmentById)
-  .patch(restrictTo('teacher'), updateAssignment)
+  .put(restrictTo('teacher'), updateAssignment)
   .delete(restrictTo('teacher'), deleteAssignment);
 
 export default router;

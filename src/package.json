@@ -1,0 +1,14 @@
+{
+    "name": "school-management",
+    "version": "1.0.0",
+    "description": "A project for school management",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "build": "postcss src/index.css -o dist/styles.css"
+    },
+    "dependencies": {
+      "tailwindcss": "^2.0.0"
+    }
+  }
+  
